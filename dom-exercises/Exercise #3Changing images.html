@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+  <select onchange="flagChange()" id="Flags">
+      <option value="images/Jordan.jpg">Jordan</option>
+      <option value="images/Brazil.jpg">Brazil</option>
+      <option value="images/palestine.jpg">Palestine</option>
+  </select>
+
+  <div class="image-container">
+      <img id="image" src="./images/noimage.jpg" style= "width:300px; height:300px;">
+  </div>
+
+  <script>
+      function flagChange(){
+          document.getElementById('image').src = document.getElementById('Flags').value;
+      }
+      </script>
+</body>
+</html>
