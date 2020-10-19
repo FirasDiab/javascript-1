@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <select>
+        <option>First one</option>
+        <option>Second one</option>
+        <option>Third one</option>
+        <option>Fourth one</option>
+    </select>
+    <button id="remove">Click me</button>
+    <!-- 5ls ana 5tmt al brmjeh :D -->
+    
+    <script>
+         $('#remove').click( function(){
+            $('select :first-child').remove();
+         });
+    </script>
+
+</body>
+</html>
